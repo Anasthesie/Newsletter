@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(235, 18%, 26%);
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 35px;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 55px;
+  color: hsl(234, 29%, 20%);
+  margin: 0;
+}
+p {
+  color: hsl(234, 29%, 20%);
+  line-height: 24px;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+ul li {
+  color: hsl(234, 29%, 20%);
+  list-style-type: none;
+  padding-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+label {
+  color: hsl(234, 29%, 20%);
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 100%;
+  height: 55px;
+  border: solid 1px hsl(231, 7%, 60%);
+  border-radius: 6px;
+  padding-left: 16px;
+}
+input:focus {
+  outline: none;
+  border-color: black;
+}
+::placeholder {
+  color: hsl(231, 7%, 60%);
+}
+form {
+  margin-top: 34px;
+}
+button {
+  background-color: hsl(234, 29%, 20%);
+  border: solid 1px hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 55px;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(to right, #ff5177, #ff654b);
+  box-shadow: 0 4px 15px #ff6967;
+  border: none;
+}
+
+input,
+button {
+  font-size: 14px;
+}
+.error-lable {
+  color: hsl(4, 100%, 67%);
+  display: none;
+}
+.lables {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  .card {
+    flex-direction: column-reverse;
+    border-radius: 0px;
+    padding: 0px;
+  }
+  .desktop {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  ul li {
+    line-height: 1.5;
+  }
+  button {
+    margin-bottom: 20px;
+  }
+  .mobile {
+    display: block;
+  }
+  .content {
+    display: block;
+  }
+}

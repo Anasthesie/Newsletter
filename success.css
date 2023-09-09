@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(235, 18%, 26%);
+  max-height: 100%;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 35px;
+  padding: 35px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 50px;
+  color: hsl(234, 29%, 20%);
+  line-height: 50px;
+}
+.email {
+  font-size: 16px;
+  color: hsl(234, 29%, 20%);
+  line-height: 25px;
+}
+span {
+  color: hsl(234, 29%, 20%);
+  font-weight: bold;
+}
+.container {
+  width: 376px;
+  margin: auto;
+}
+button {
+  background-color: hsl(234, 29%, 20%);
+  border: solid 1px hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+button:hover {
+  background-image: linear-gradient(to right, #ff5177, #ff654b);
+  box-shadow: 0 4px 15px #ff6967;
+  border: none;
+}
+@media screen and (max-width: 375px) {
+  .card {
+    height: 100vh;
+    padding: 0;
+    border-radius: 0px;
+  }
+  .container {
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .success-message {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
